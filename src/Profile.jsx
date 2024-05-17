@@ -1,10 +1,11 @@
-import {useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import DefaultProfile from "./defaultProfile";
 import Spinach from "./Spinach";
 import Popeye from "./Popeye";
+import Kevdawg from "./kevdawg";
 
 const Profile = () => {
-const {name } = useParams();
+  const { name } = useParams();
 
   return (
     <div>
@@ -12,10 +13,17 @@ const {name } = useParams();
       <p>So, how are you?</p>
       <hr />
       <h2>The profile visited is here:</h2>
-      {name === "popeye" ? (
-        <Popeye/>) : name === "spinach" ? (<Spinach/>) : (<DefaultProfile/>)}
+      {name === "kevdawg" ? (
+        <Kevdawg />
+      ) : name === "popeye" ? (
+        <Popeye />
+      ) : name === "spinach" ? (
+        <Spinach />
+      ) : (
+        <DefaultProfile />
+      )}
     </div>
   );
-}
+};
 
 export default Profile;

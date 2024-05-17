@@ -22,6 +22,10 @@ function App() {
           <li>
             <Link to="profile/spinach">Spinach</Link>
           </li>
+          <li>
+            <Link to="profile/kevdawg">Kevdawg</Link>
+          </li>
+
         </ul>
       </nav>
     </div>
