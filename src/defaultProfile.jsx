@@ -1,5 +1,12 @@
-const DefaultProfile = () => {
-    return <p>Oh, nothing to see here! </p>
-}
+import { Link } from "react-router-dom";
 
-export default DefaultProfile
+const DefaultProfile = () => {
+  return (
+    <>
+      <p>Oh, nothing to see here! </p>
+      <Link to="/">Return home</Link>
+    </>
+  );
+};
+
+export default DefaultProfile;

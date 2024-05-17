@@ -16,6 +16,12 @@ function App() {
           <li>
             <Link to="profile">Profile page</Link>
           </li>
+          <li>
+            <Link to="profile/popeye">Popeye</Link>
+          </li>
+          <li>
+            <Link to="profile/spinach">Spinach</Link>
+          </li>
         </ul>
       </nav>
     </div>
